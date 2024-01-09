@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Account</title>
+    <title>Add memes</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-[#EDF3F1]">
@@ -46,20 +46,16 @@
                 id="button-addmemes"
                 class="bg-[#B7EB38] hover:bg-[#7BAF00] rounded-full md:px-4 px-2 transition-colors duration-300 ease-in-out"
               >
-                <a href="addmeme.html">
-                  <div class="flex text-[#052E16] hover:text-white">
-                    <div class="md:py-0.5 px-1">
-                      <p class="text-2xl">+</p>
-                    </div>
-                    <div>
-                      <p
-                        class="text-lg md:py-1.5 py-1 font-base px-1 md:block hidden"
-                      >
-                        Add memes
-                      </p>
-                    </div>
+                <div class="flex">
+                  <div class="md:py-0.5 px-1">
+                    <p class="text-[#052E16] hover:text-white text-2xl">+</p>
                   </div>
-                </a>
+                  <p
+                    class="text-[#052E16] hover:text-white text-lg md:py-1.5 py-1 font-base px-1 md:block hidden"
+                  >
+                    Add memes
+                  </p>
+                </div>
               </button>
 
               <div id="navbar-profile">
@@ -98,7 +94,7 @@
                   >
                     <div class="py-1" role="none">
                       <a
-                        href="#"
+                        href="account.html"
                         class="text-[#052E16] hover:animate-pulse block px-4 py-2 text-sm"
                         role="menuitem"
                         tabindex="-1"
@@ -169,79 +165,55 @@
             </div>
           </div>
         </section>
-        <div class="pb-6">
-          <div class="w-full">
-            <p class="text-[#052E16] font-semibold text-2xl text-center">
-              Profile
-            </p>
-          </div>
-        </div>
-        <section id="profile-photo" class="flex items-center justify-center">
-          <div class="">
+        <section id="add-meme">
+          <div class="pb-6">
             <div class="w-full">
-              <img src="https://placehold.co/300x300" class="rounded-full" />
+              <p class="text-[#052E16] font-semibold text-2xl text-center">
+                Add memes
+              </p>
             </div>
           </div>
-        </section>
-        <section id="profile-info">
-          <div class="py-2">
-            <form class="w-full">
-              <p class="text-justify">Username</p>
-              <div class="flex items-center border-b border-gray-300 py-2">
-                <input
-                  class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                  type="text"
-                  placeholder="Username account"
-                  aria-label="Full name"
-                  disabled
-                />
+          <section id="memes-photo" class="flex items-center justify-center">
+            <div class="">
+              <div class="w-full">
+                <img src="https://placehold.co/600x400" class="" />
               </div>
-            </form>
+            </div>
+          </section>
+          <div class="py-4">
+            <div class="py-2">
+              <form class="w-full">
+                <p class="text-justify">Judul</p>
+                <div class="flex items-center border-b border-gray-300 py-2">
+                  <input
+                    class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                    type="text"
+                    placeholder="Deskripsikan meme-mu"
+                    aria-label="Full name"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="py-2">
+              <form class="w-full">
+                <p class="text-justify">Kategori</p>
+                <div class="flex items-center border-b border-gray-300 py-2">
+                  <input
+                    class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                    type="text"
+                    placeholder="Masukan jenis kategori meme-mu"
+                    aria-label="Full name"
+                  />
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="py-2">
-            <form class="w-full">
-              <p class="text-justify">E-mail</p>
-              <div class="flex items-center border-b border-gray-300 py-2">
-                <input
-                  class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                  type="text"
-                  placeholder="E-mail account"
-                  aria-label="Full name"
-                />
-                <button
-                  class="flex-shrink-0 bg-[#B7EB38] hover:bg-[#7BAF00] border-[#B7EB38] hover:border-[#7BAF00] text-sm border-4 text-[#052E16] hover:text-white py-1 px-2 rounded-full transition-colors duration-300 ease-in-out"
-                  type="button"
-                >
-                  Edit
-                </button>
-              </div>
-            </form>
-          </div>
-          <div class="py-2">
-            <form class="w-full">
-              <p class="text-justify">Password</p>
-              <div class="flex items-center border-b border-gray-300 py-2">
-                <input
-                  class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                  type="text"
-                  placeholder="*********"
-                  aria-label="Full name"
-                />
-                <button
-                  class="flex-shrink-0 bg-[#B7EB38] hover:bg-[#7BAF00] border-[#B7EB38] hover:border-[#7BAF00] text-sm border-4 text-[#052E16] hover:text-white py-1 px-2 rounded-full transition-colors duration-300 ease-in-out"
-                  type="button"
-                >
-                  Edit
-                </button>
-              </div>
-            </form>
-          </div>
-          <div class="flex justify-center py-4">
+          <div class="flex justify-center">
             <button
               class="flex-shrink-0 bg-[#B7EB38] hover:bg-[#7BAF00] border-[#B7EB38] hover:border-[#7BAF00] text-sm border-4 text-[#052E16] hover:text-white py-1 px-2 rounded-full transition-colors duration-300 ease-in-out"
               type="button"
             >
-              Save changes
+              Upload
             </button>
           </div>
         </section>
