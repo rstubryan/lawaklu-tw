@@ -176,7 +176,20 @@
           <section id="memes-photo" class="flex items-center justify-center">
             <div class="">
               <div class="w-full">
-                <img src="https://placehold.co/600x400" class="" />
+                <button>
+                  <label for="file-upload" class="relative cursor-pointer">
+                    <img
+                      src="https://placehold.co/600x400"
+                      class="rounded-xl"
+                    />
+                    <input
+                      id="file-upload"
+                      name="file-upload"
+                      type="file"
+                      class="sr-only"
+                    />
+                  </label>
+                </button>
               </div>
             </div>
           </section>
@@ -211,7 +224,7 @@
           <div class="flex justify-center">
             <button
               class="flex-shrink-0 bg-[#B7EB38] hover:bg-[#7BAF00] border-[#B7EB38] hover:border-[#7BAF00] text-sm border-4 text-[#052E16] hover:text-white py-1 px-2 rounded-full transition-colors duration-300 ease-in-out"
-              type="button"
+              type="submit"
             >
               Upload
             </button>
